@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "player",
+            "team": "tag_seeker"
+          }
+        },
+        "entity": {
+          "team": "tag_hider"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tag:interaction/player_tagged"
+  }
+}

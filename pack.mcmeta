@@ -1,0 +1,10 @@
+{
+    "pack": {
+        "description": {
+            "text": "Make tag arenas with your friends!",
+			"color": "gold",
+			"italic": true
+        },
+        "pack_format": 10
+    }
+}

@@ -1,0 +1,12 @@
+scoreboard objectives remove tag_checks
+scoreboard objectives remove tag_config
+scoreboard objectives remove tag_const
+scoreboard objectives remove tag_cooldown
+scoreboard objectives remove tag_damage_dealt
+scoreboard objectives remove tag_damage_taken
+scoreboard objectives remove tag_game_score
+scoreboard objectives remove tag_help
+scoreboard objectives remove tag_settings
+
+team remove tag_hider
+team remove tag_seeker
