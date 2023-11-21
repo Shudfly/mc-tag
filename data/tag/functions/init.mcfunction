@@ -3,7 +3,9 @@
 ### checks ###
 
 scoreboard objectives add tag_checks dummy
-scoreboard players set #tag_in_arena tag_checks -1
+scoreboard objectives add tag_in_arena dummy
+scoreboard players set #tag_enough_players tag_checks -1
+scoreboard players set #tag_num_in_arena tag_checks 0
 
 ### interaction handling ###
 

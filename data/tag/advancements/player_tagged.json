@@ -10,6 +10,7 @@
           }
         },
         "entity": {
+          "type": "player",
           "team": "tag_hider"
         }
       }
