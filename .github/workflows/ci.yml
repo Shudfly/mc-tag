@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Zip Mod
+      run: zip Tag_${{ github.ref_name }}.zip -r data pack.mcmeta
+
+    - name: Upload Result
+      uses: sinshutu/upload-to-discord@v2.0.0
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      with:
+        args: Tag_${{ github.ref_name }}.zip
