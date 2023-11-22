@@ -1,8 +1,6 @@
 execute at @s run tag @p[scores={tag_damage_taken=1..}] add tag_tagged
-scoreboard players set @a tag_damage_taken 0
 
-tag @s add tag_escape
-
-function tag:interaction/swap_roles
+execute if entity @a[tag=tag_tagged,nbt=!{active_effects:[{id:"minecraft:resistance"}]}] run function tag:interaction/swap_roles
+tag @a remove tag_tagged
 
 advancement revoke @s only tag:player_tagged
