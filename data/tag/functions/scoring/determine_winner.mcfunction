@@ -1,0 +1,1 @@
+execute as @a[scores={tag_game_score=1..}] if score @s tag_game_score > #tag_highest_score tag_game_score run scoreboard players operation #tag_highest_score tag_game_score = @s tag_game_score
