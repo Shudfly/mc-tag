@@ -36,7 +36,11 @@ scoreboard objectives add tag_help trigger {"translate":"Tag Help","color":"gold
 ### tracking ###
 
 scoreboard objectives add tag_game_score dummy {"translate":"Score","color":"gold"}
+scoreboard players set #tag_highest_score tag_game_score 0
 
+#set display
+scoreboard objectives setdisplay sidebar.team.light_purple tag_game_score
+scoreboard objectives setdisplay sidebar.team.red tag_game_score
 
 ### --- TEAMS --- ###
 
