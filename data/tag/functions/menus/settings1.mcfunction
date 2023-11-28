@@ -15,6 +15,6 @@ function tag:menus/settings1/friendly_fire
 
 tellraw @s " "
 
-tellraw @s [{"translate":"< PREV","color":"dark_gray"},{"text":"  ","underlined":false},{"translate":"Page 1/3","color":"green"},{"text":"  "},{"translate":"NEXT >","color":"yellow","underlined":true,"clickEvent":{"action":"run_command","value":"/function tag:menus/settings2"}}]
+tellraw @s ["",{"translate":"< PREV","color":"dark_gray"},"  ",{"translate":"Page 1/3","color":"green"},"  ",{"translate":"NEXT >","color":"yellow","underlined":true,"clickEvent":{"action":"run_command","value":"/function tag:menus/settings2"}}]
 tellraw @s {"text":"----------","color":"dark_gray","bold":true,"strikethrough":true}
 tellraw @s " "
