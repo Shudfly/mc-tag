@@ -1,0 +1,1 @@
+stopsound @a[scores={tag_in_arena=1}] record
