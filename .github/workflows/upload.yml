@@ -1,8 +1,8 @@
-name: CI
+name: Upload
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, dev ]
   pull_request:
     branches: [ main ]
 
@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@master
     
     - name: Zip Mod
-      run: zip Tag_${{ github.ref_name }}.zip -r data pack.mcmeta
+      run: zip Tag_${{ github.ref_name }}.zip -r data pack.mcmeta LICENSE.md
 
     - name: Upload Result
-      uses: sinshutu/upload-to-discord@v2.0.0
+      uses: sinshutu/upload-to-discord@master
       env:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       with:
