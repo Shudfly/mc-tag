@@ -1,1 +1,1 @@
-summon armor_stand ~ ~ ~ {Invulnerable: 1b, Invisible: 1b, Marker: 1b, NoGravity: 1b, Small: 1b, Tags: ["tag_arena_jukebox"]}
+execute align xyz positioned ~.5 ~ ~.5 run summon armor_stand ~ ~ ~ {Invulnerable: 1b, Invisible: 1b, Marker: 1b, NoGravity: 1b, Small: 1b, Tags: ["tag_arena_jukebox"]}
