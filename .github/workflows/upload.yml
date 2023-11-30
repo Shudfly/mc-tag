@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@master
     
     - name: Zip Mod
-      run: zip Tag_${{ github.ref_name }}.zip -r data pack.mcmeta
+      run: zip Tag_${{ github.ref_name }}.zip -r data pack.mcmeta LICENSE.md
 
     - name: Upload Result
       uses: sinshutu/upload-to-discord@master
