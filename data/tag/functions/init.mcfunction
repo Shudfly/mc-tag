@@ -26,12 +26,14 @@ scoreboard players set #tag_timeconv tag_const 60
 
 ## settings trigger
 scoreboard objectives add tag_config trigger {"translate":"Tag Config","color":"green"}
+scoreboard players enable * tag_config
 
 ## settings scoreboard
 scoreboard objectives add tag_settings dummy {"translate":"Tag Settings","color":"gold"}
 
 ## help
 scoreboard objectives add tag_help trigger {"translate":"Tag Help","color":"gold"}
+scoreboard players enable * tag_help
 
 ### tracking ###
 
